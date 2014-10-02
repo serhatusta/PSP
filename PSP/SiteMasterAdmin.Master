@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMasterAdmin.Master.cs" Inherits="PSP.SiteMasterAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+        <title>Hacettepe University PSP Tool</title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <script>
+        function logout() {
+            window.location.href = "LoginPage.aspx";
+        }
+    </script>
+
+    <body id="Body1" runat="server">
+        <form id="Form1" runat="server">
+            <asp:Panel ID="Panel1" runat="server">
+            <div id="container">
+                <div id="header">
+                    <asp:Table ID="Table2" runat="server">
+                        <asp:TableRow>
+                            <asp:TableCell VerticalAlign="Middle">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/hacettepe.jpg"/>
+                            </asp:TableCell>
+                            <asp:TableCell VerticalAlign="Middle" Width="700px">
+                                <h1>Personal Software Process</h1>
+                                <h2>Hacettepe University</h2>
+                            </asp:TableCell>
+                            <asp:TableCell VerticalAlign="Middle">
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/aicon.png"/>
+                            </asp:TableCell>
+                        </asp:TableRow>
+
+                    </asp:Table>
+                </div>
+                <div id="middle">
+                    <asp:Panel ID="Panel2" runat="server">
+                        <div id="focus">
+                            <div id="navigation">
+                                <h3>Navigation</h3>
+                                <ul>
+                                    <li><a href="AdminHome.aspx" class="active">Home</a></li>
+                                    <li><a href="AdminGroupManagement.aspx">Group Management</a></li>
+                                    <li><a href="AdminInstructerManagement.aspx">Instructer Management</a></li>
+                                    <li><a href="AdminAnnoucement.aspx">Annoucements</a></li>
+                                    <li><a href="AdminProfile.aspx">Profile</a></li>
+                                </ul>
+                            </div>
+                            <div id="quicksearch">
+                                <asp:Label ID="Label12" runat="server" Text="" Height="20px"></asp:Label>
+                                <fieldset>
+                                    <legend style="text-align:center">ADMIN INFORMATION</legend>
+                                    
+                                    <asp:Table ID="Table1" runat="server" ForeColor="White">
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_user" Text="USER" Font-Size="X-Small" Font-Names="Arial" Font-Underline="true"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label13" Text=":" Font-Size="X-Small" Font-Names="Arial"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_user1" Text="..." Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label3" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_type" Text="USER TYPE" Font-Size="X-Small" Font-Names="Arial" Font-Underline="true"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label14" Text=":" Font-Size="X-Small" Font-Names="Arial"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_type1" Text="..." Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label4" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label5" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label6" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_username" Text="USERNAME" Font-Size="X-Small" Font-Names="Arial" Font-Underline="true"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label15" Text=":" Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_username1" Text="..." Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label7" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label8" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label9" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_lastlogin" Text="LAST LOGIN" Font-Size="X-Small" Font-Names="Arial" Font-Underline="true"  Width="100px"></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label16" Text=":" Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                            <asp:TableCell>
+                                                <asp:Label runat="server" ID="label_lastlogin1" Text="..." Font-Size="X-Small" Font-Names="Arial" ></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label10" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label11" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                         <asp:TableRow>
+                                            <asp:TableCell>
+                                                <asp:Label ID="Label17" runat="server" Text=" "></asp:Label>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                    </asp:Table>
+                                </fieldset>
+                                <asp:Label ID="Label18" runat="server" Text="" Height="30px"></asp:Label>
+                                
+                                <asp:Button runat="server"  text="LOGOUT" ForeColor="#003366" Font-Bold="true" OnClick="button_logout_Click" ID="button_logout" Width="225px" BackColor="White" Font-Size="X-Small" />
+                            </div>
+                        </div>
+                    </asp:Panel>
+                    <div id="content">
+                        <div class="row" >
+                            <div >
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+
+                                    
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright &copy; 2014 <a href="http://www.cs.hacettepe.edu.tr/">Hacettepe University</a> | Design by: <a href="http://www.weissmike.com">Ebru-Emre-Hande-Selen</a></p>
+            </div>
+        </asp:Panel>
+        </form>
+    </body>
+</html>
